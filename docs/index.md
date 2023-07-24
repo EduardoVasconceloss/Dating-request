@@ -99,6 +99,8 @@ Mude o tamanho da "Main Window" de acordo com sua preferência.
 
 As "labels" são necessárias para nós criarmos a pergunta e as respostas
 
+--------------------------------------------------------------------------
+
 ##### Criando a "label" principal
 
 Vamos adicionar uma "label" com a pergunta "Quer namorar comigo?":
@@ -111,6 +113,8 @@ Vamos adicionar uma "label" com a pergunta "Quer namorar comigo?":
 4. Na seção "Property Editor", localizada no canto direito, procure a sub-seção "QLabel".
 5. Agora clique na seção "aligment" e mude o campo "Horizontal"
 6. Você deve mudar o campo "Horizontal" para a opção "AlignHCenter", agora sua "label" está centralizada.
+
+-----------------------------------------------------------------------------------------------------------
 
 ##### Criando os "frames" e os botões das respostas
 
@@ -129,6 +133,8 @@ Adicione dois "frames" a sua "Main Window"
 1. Altere o texto dentro dos botões para "Sim" e "Não" e depois clique na área vazia do "frame"
 2. Dentro da seção "QFrame", localizada no canto direito, procure o campo "frameShape" e mude a opção para "NoFrame". Essa opção remove o contorno do "frame".
 3. Não esqueça de mudar o nome da "label", dos "frames" e dos botões".
+
+-----------------------------------------------------------------------------------------------------------
 
 ##### Alterando o estilo do programa
 
@@ -177,6 +183,8 @@ QPushButton {
 
 2. Clique em "Aplicar" e depois clique em "OK" para salvar as alterações e sair do editor de estilo.
 
+-----------------------------------------------------------------------------------------------------------
+
 ##### Adicionando o coração ao programa
 
 Para dar o toque final no romantismo do programa, vamos adicionar um coração. Você pode encontrar o arquivo ".png" desse coração nesse [repositório](https://github.com/EduardoVasconceloss/dating-request/tree/main), dentro do diretório "assets".
@@ -197,6 +205,8 @@ Para dar o toque final no romantismo do programa, vamos adicionar um coração. 
 4. Selecione o diretório onde você salvou o arquivo "coracao.png", depois selecione o arquivo "coracao.png" e clique em "Abrir".
 
 > **Aviso:** Em baixo do campo "pixmap", você vai achar o campo "scaledContents", você deve marcar esse campo.
+
+-----------------------------------------------------------------------------------------------------------
 
 #### Salvando o projeto do Qt Designer
 
