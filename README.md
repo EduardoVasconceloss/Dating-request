@@ -2,7 +2,7 @@
 
 - Esse é o repositório de um software romântico, desenvolvido com Python, para pedir alguém em namoro.
 
-- **Esse "README.md" não é a documentação completa desse projeto, clique nesse [link](https://EduardoVasconceloss.github.io/Dating-request/) para ver a documentação completa.**
+- **Esse "README.md" não é a documentação completa desse projeto, clique nesse [link](https://EduardoVasconceloss.github.io/Dating_request/) para ver a documentação completa.**
 
 > **AVISO:** :warning:	
 >
