@@ -1,5 +1,4 @@
 site_name: Dating Request - Pedido de namoro com Python
-site_url: https://EduardoVasconceloss.github.io/dating-request/
 theme:
   name: material
   features:
@@ -12,7 +11,7 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
-  language: pt-BR
+  language: pt
   palette:
     - scheme: default
       toggle:
@@ -27,31 +26,19 @@ theme:
       primary: teal
       accent: lime
 
-plugins:
-  - social
-
-extra:
-  social:
-    - icon: fontawesome/brands/github-alt
-      link: https://github.com/EduardoVasconceloss
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/eduardo-lbvasconcelos/
-
-markdown_extensions:
-  - attr_list
-  - md_in_html
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - admonition
-  - pymdownx.arithmatex:
-      generic: true
-  - footnotes
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.mark
-  - attr_list
+  markdown_extensions:
+    - pymdownx.highlight:
+        anchor_linenums: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - admonition
+    - pymdownx.arithmatex:
+        generic: true
+    - footnotes
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.mark
+    - attr_list
 
 copyright: |
   &copy; 2023 <a href="https://github.com/EduardoVasconceloss"  target="_blank" rel="noopener">Eduardo Vasconcelos</a>
