@@ -1,6 +1,10 @@
-# Bem-vindo(a) a documentação do Dating Request!
+# Bem-vindo(a) a documentação do projeto Dating Request!
 
-Irei te ensinar como criar um programa em Python para pedir alguém em namoro!
+Eu irei te ensinar o passo a passo de como criar um programa em Python para pedir alguém em namoro!
+
+> **Nota:** Se você estiver usando o Windows, eu disponibilizei um exemplo do programa "Dating_request.exe" já pronto nesse [repositório](https://github.com/EduardoVasconceloss/dating-request) para você baixar e se encantar! 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Instalando o Python3 e o Pip.
 
@@ -9,13 +13,13 @@ Para criar o ambiente virtual, precisamos ter o Python e o Pip instalandos na m�
 ### Instalando no Linux
 
 - [Python3](https://www.python.org/downloads/) versão 3.9 ou acima:
-  ```bash
-  sudo apt install python3
-  ```
+```bash
+sudo apt install python3
+```
 - Pip:
-  ```bash
-  sudo apt install python3-pip
-  ```
+```bash
+sudo apt install python3-pip
+```
 
 ### Instalando no Windows
 
@@ -23,41 +27,41 @@ Para criar o ambiente virtual, precisamos ter o Python e o Pip instalandos na m�
 - Execute o instalador que você baixou e siga as instruções na tela.
 - **Marque a opção "Adicionar Python 3.x ao PATH" durante a instalação.**
 - Para instalar o pip, abra o cmd ou powershell e execute o comando:
-  ```bash
-  python -m ensurepip --upgrade
-  ```
+```bash
+python -m ensurepip --upgrade
+```
 
 ### Instalando no Mac OS
 
 - Abra o terminal e instale o Homebrew:
-  ```bash
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  ```
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 - Agora instale o Python:
-  ```bash
-  brew install python3
-  ```
+```bash
+brew install python3
+```
 - Por fim, instale o pip:
-  ```bash
-  sudo easy_install pip
-  ```
+```bash
+sudo easy_install pip
+```
 
 ## Criando o ambiente virtual.
 
 Para instalação de algumas ferramentas essenciais como o "PySide6", precisamos criar um ambiente virtual.
 
 - Rode esse comando no terminal para criar o ambiente virtual:
-  ```bash
-  python3 -m venv venv
-  ```
+```bash
+python3 -m venv venv
+```
 - Agora ative o ambiente virtual:
-  ```bash
-  source venv/bin/activate
-  ```
+```bash
+source venv/bin/activate
+```
 - Instale o pacote "pipenv":
-  ```bash
-  pip install pipenv
-  ```
+```bash
+pip install pipenv
+```
 
 ## Criando a interface do programa.
 
@@ -79,21 +83,21 @@ pipenv run pyside6-designer
 
 #### Criando a janela do programa
 
-Ao iniciar o Qt Designer, selecione a opção "Main Window"
+- Ao iniciar o Qt Designer, selecione a opção "Main Window"
 
-![Tela inicial do Qt Designer](/home/eduardo/Documentos/github/dating-request/docs/assets/tela-inicial-qtdesigner.png)
+![Tela inicial do Qt Designer](assets/tela-inicial-qtdesigner.png)
 
-Agora remova o "menu bar", clicando com o botão direito do mouse na parte superior da "Main Window"
+- Agora remova o "menu bar", clicando com o botão direito do mouse na parte superior da "Main Window"
 
-![Removendo o ](/home/eduardo/Documentos/github/dating-request/docs/assets/remove-menu-bar.png)
+![Removendo o ](assets/remove-menu-bar.png)
 
-Também remova o "status bar", clicando com o botão direito do mouse na parte inferior da "Main Window"
+- Também remova o "status bar", clicando com o botão direito do mouse na parte inferior da "Main Window"
 
-![Removendo a ](/home/eduardo/Documentos/github/dating-request/docs/assets/remove-status-bar.png)
+![Removendo a ](assets/remove-status-bar.png)
 
-Mude o tamanho da "Main Window" de acordo com sua preferência.
+- Mude o tamanho da "Main Window" de acordo com sua preferência.
 
-![Mudando o tamanho da ](/home/eduardo/Documentos/github/dating-request/docs/assets/resolucao-mainwindow.png)
+![Mudando o tamanho da ](assets/resolucao-mainwindow.png)
 
 #### Adicionando os campos de "label"
 
@@ -103,9 +107,9 @@ As "labels" são necessárias para nós criarmos a pergunta e as respostas
 
 ##### Criando a "label" principal
 
-Vamos adicionar uma "label" com a pergunta "Quer namorar comigo?":
+- Vamos adicionar uma "label" com a pergunta "Quer namorar comigo?":
 
-![](/home/eduardo/Documentos/github/dating-request/docs/assets/label-quernamorarcmg.png)
+![](assets/label-quernamorarcmg.png)
 
 1. No canto esquerdo, desça até achar a opção "label", agora você deve clicar, segurar e arrastar a opção "label" até a "Main Window".
 2. Adicione a pergunta que você deseja fazer na "label".
@@ -118,9 +122,9 @@ Vamos adicionar uma "label" com a pergunta "Quer namorar comigo?":
 
 ##### Criando os "frames" e os botões das respostas
 
-Adicione dois "frames" a sua "Main Window"
+- Adicione dois "frames" a sua "Main Window"
 
-![](/home/eduardo/Documentos/github/dating-request/docs/assets/frame-sim-nao.png)
+![](assets/frame-sim-nao.png)
 
 1. No canto esquerdo, procure a opção "Frame".
 2. Agora você deve clicar, segurar e arrastar a opção "Frame" até a "Main Window", repita esse processo duas vezes para adicionar dois "frames".
@@ -128,7 +132,7 @@ Adicione dois "frames" a sua "Main Window"
 4. Clique, segure e arraste a opção "PushButton" até a "Main Window", repita esse processo duas vezes para adicionar dois botões.
 5. Clique com o botão direito na área vazia do "frame", depois clique em "Lay out" e por fim clique em "Lay Out Horizontally". Dessa maneira, o botão ficará centralizado dentro do "frame".
 
-![](/home/eduardo/Documentos/github/dating-request/docs/assets/frame-noframe.png)
+![](assets/frame-noframe.png)
 
 1. Altere o texto dentro dos botões para "Sim" e "Não" e depois clique na área vazia do "frame"
 2. Dentro da seção "QFrame", localizada no canto direito, procure o campo "frameShape" e mude a opção para "NoFrame". Essa opção remove o contorno do "frame".
@@ -138,14 +142,14 @@ Adicione dois "frames" a sua "Main Window"
 
 ##### Alterando o estilo do programa
 
-Para deixar o programa visualmente atrativo, devemos mudar o "estilo" dele.
+- Para deixar o programa visualmente atrativo, devemos mudar o "estilo" dele.
 
-![](/home/eduardo/Documentos/github/dating-request/docs/assets/qwidget-stylesheet1.png)
+![](assets/qwidget-stylesheet1.png)
 
 1. Clique com o botão direito no campo "centralwidget".
 2. Agora clique em "Change style sheet...".
 
-![](/home/eduardo/Documentos/github/dating-request/docs/assets/qwidget-stylesheet2.png)
+![](assets/qwidget-stylesheet2.png)
 
 1. Adicione esse bloco de código na área vazia do "Edit Style Sheet":
 
@@ -187,9 +191,9 @@ QPushButton {
 
 ##### Adicionando o coração ao programa
 
-Para dar o toque final no romantismo do programa, vamos adicionar um coração. Você pode encontrar o arquivo ".png" desse coração nesse [repositório](https://github.com/EduardoVasconceloss/dating-request/tree/main), dentro do diretório "assets".
+- Para dar o toque final no romantismo do programa, vamos adicionar um coração. Você pode encontrar o arquivo ".png" desse coração nesse [repositório](https://github.com/EduardoVasconceloss/dating-request/tree/main), dentro do diretório "assets".
 
-![adicionando o coração, parte 1](/home/eduardo/Documentos/github/dating-request/docs/assets/label-coracao1.png)
+![adicionando o coração, parte 1](assets/label-coracao1.png)
 
 1. Repita o processo de adicionar uma "label" na "Main Window" e mude o nome da "label".
 2. Na seção "QLabel" clique no campo "pixmap" e depois clique no ícone com "três pontinhos".
@@ -197,7 +201,7 @@ Para dar o toque final no romantismo do programa, vamos adicionar um coração. 
 4. Na janela de "Edit Resource" clique no ícone no canto inferior esquerdo.
 5. Na janela de "New Resource File" digite o nome "resource" e clique em "Salvar"
 
-![adicionando o coração, parte 2](/home/eduardo/Documentos/github/dating-request/docs/assets/label-coracao2.png)
+![adicionando o coração, parte 2](assets/label-coracao2.png)
 
 1. Na janela "Edit Resource", clique no ícone de uma "pasta azul com sinal de '+'".
 2. Digite o nome "assets".
@@ -210,28 +214,28 @@ Para dar o toque final no romantismo do programa, vamos adicionar um coração. 
 
 #### Salvando o projeto do Qt Designer
 
-Grande parte do nosso programa foi feito, então precisamos salvar o design dele.
+- Grande parte do nosso programa foi feito, então precisamos salvar o design dele.
 
-![salvando, parte 1](/home/eduardo/Documentos/github/dating-request/docs/assets/save1.png)
+![salvando, parte 1](assets/save1.png)
 
 1. No canto superior esquerdo, clique em "File", depois clique em "Save As..." e por fim clique em "Salvar".
 
-![salvando, parte 1](/home/eduardo/Documentos/github/dating-request/docs/assets/save2.png)
+![salvando, parte 1](assets/save2.png)
 
 2. No canto superior esquerdo, clique em "Form" e depois clique em "View Python Code..."
 3. Após isso irá aparecer uma janela com o código da interface do nosso programa em Python. Agora, clique no ícone de um "disquete" no canto superior esquerdo e depois clique em "Salvar".
 
 ## Criando os arquivos em Python para o programa
 
-Agora vamos criar os arquivos necessários para "rodar" o nosso programa.
+- Agora vamos criar os arquivos necessários para "rodar" o nosso programa.
 
-- Converta o arquivo "resource.qrc" para "resource_rc.py"
+1. Converta o arquivo "resource.qrc" para "resource_rc.py"
 
 ```python3
 pyside6-rcc assets/resource.qrc -o resource_rc.py
 ```
 
-- Crie o arquivo "app.py" e cole o bloco de código abaixo nesse arquivo, ele será responsável por executar o nosso programa.
+2. Crie o arquivo "app.py" e cole o bloco de código abaixo nesse arquivo, ele será responsável por executar o nosso programa.
 
 ```python3
 from PySide6 import QtWidgets
@@ -295,9 +299,9 @@ app.exec()
 python3 app.py
 ```
 
-![programa, parte 1](/home/eduardo/Documentos/github/dating-request/docs/assets/programa1.png)
+![programa, parte 1](assets/programa1.png)
 
-![programa, parte 2](/home/eduardo/Documentos/github/dating-request/docs/assets/programa2.png)
+![programa, parte 2](assets/programa2.png)
 
 > **Nota:** Caso, você não tenha o Python na sua máquina mas quer utilizar o programa, irei deixar o executável dele, chamado "Dating_request.exe" no repositório do projeto.
 
